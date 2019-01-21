@@ -1,30 +1,57 @@
-ul {
+@keyframes animation {
+    0%{
+        transform:translateX(5px)
+    }
+    
+    25%{
+        transform: translateY(-5px)
+    }
+
+    50%{
+        transform: translateX(-5px)
+    }
+    
+    75%{
+        transform: translateY(5px)
+    }
+    
+    100%{
+        transform: translateX(5px)
+    }
+
+}
+
+ul.nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
+  background-color: #b7ced3;
+    outline: #2f4b54 solid 5px;
+    
 }
 
 li a {
+    float: left;
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+    
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: #2f4b54;
 }
 
-.active {
-  background-color: #4CAF50;
+audio{
+    float: right;
+    padding-top: 0dp;
+    background-color: #b7ced3;
+    outline: #2f4b54 solid 5px;
+    height: 46px;
 }
 
 aside {
@@ -39,10 +66,23 @@ aside h1, h3 {
     text-align: center;
 }
 
-img photo{
+aside p{
+    text-align: justify;
+}
+
+
+.portrait img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
     border-radius: 50%;   
     border-style: dotted;
-    border-bottom-color: aqua;
+    animation: animation 3s;
+    animation-iteration-count: infinite;
+}
+
+body{
+    background-color: #f5f1ed;
 }
 
 body h1 {
@@ -50,14 +90,39 @@ body h1 {
     text-align: center;
 }
 
-body p {
-    background: #567;
-    padding-left: 300px;
-    padding-right: 30px;
+li b {
+    list-style-type: circle;
+}
+
+.CV  {
+    padding-left: 310px;
+    padding-right: 40px;
+    text-align: justify;
 }
 
 form {
     padding-left: 300px;
-    padding-right: 30px;
+    padding-right: 40px;
+}
+
+form {
+    height: 480px;
+    margin-top: 40px;
+    background-color: #b7ced3;
+}
+
+footer {
+    margin-top: 0px;
+    padding-left: 15px;
+    background-color: #b7ced3;
+    height:120px;
+    outline: #2f4b54 solid 5px;
+}
+
+
+footer p{
+        margin-top: 0px;
+
+    text-align: center;
 }
 
